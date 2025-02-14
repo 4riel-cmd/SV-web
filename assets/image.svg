@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Corazón estilizado a tamaño mayor -->
+  <path d="M64 116 s52 -31.8 52 -67 S87 4 64 29 12 49 12 49 12 84.2 64 116z" fill="#E53E3E"/>
+  <!-- Letra M en el centro, escalada -->
+  <text x="65" y="80" text-anchor="middle" font-size="60" fill="#ffffff" font-family="Arial" font-weight="bold">M</text>
+</svg>

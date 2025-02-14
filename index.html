@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="/assets/image.svg" type="image/svg+xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Quieres ser mi San Valentín?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /*background: linear-gradient(135deg, #ff9a9e, #fad0c4);*/
+      background-image: url('/backgrounds.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #canvas {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .titulo {
+      font-size: 2rem;
+      color: #d32f2f;
+      margin-bottom: 20px;
+    }
+    #mainGif {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .si { background-color: #4caf50; }
+    .no { background-color: #f44336; }
+    .talvez { background-color: #ff9800; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+  <script src="/assets/index.js" defer></script>
+</head>
+<body>
+  <main id="canvas">
+    <h1 class="titulo">¿Quieres ser mi San Valentín?</h1>
+    <img id="mainGif" src="/media/B.gif" alt="GIF principal" width="400">
+    <div class="botones">
+      <button id="btnSi" class="btn si">Sí</button>
+      <button id="btnNo" class="btn no">No (Me caes mal)</button>
+      <button id="btnTalvez" class="btn talvez">Tal vez (osea no)</button>
+    </div>
+  </main>
+</body>
+</html>
